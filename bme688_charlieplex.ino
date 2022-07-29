@@ -180,15 +180,15 @@ void dataDisplayMode(uint8_t mode)
     break;
 
   case 1:
-    dataDisplayconstruct(-30, "TEMP", (int16_t)round(iaqSensor.temperature));
+    dataDisplayconstruct(-30, "TEMP", (int16_t)round(iaqSensor.temperature)); // Scroll "TEMP" across screen and then only show temperature data
     break;
 
   case 2:
-    dataDisplayconstruct(-50, "HUMIDITY", (int16_t)(iaqSensor.humidity));
+    dataDisplayconstruct(-50, "HUMIDITY", (int16_t)(iaqSensor.humidity)); // Scroll "HUMIDITY" across screen and then only show humidity data
     break;
 
   case 3:
-    dataDisplayconstruct(-20, "IAQ", (int16_t)(iaqSensor.iaq));
+    dataDisplayconstruct(-20, "IAQ", (int16_t)(iaqSensor.iaq)); // Scroll "IAQ" across screen and then only show IAQ data
     break;
 
   default:
